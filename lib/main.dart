@@ -5,7 +5,7 @@ import 'package:hanytask/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  // await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
             title: 'Mohamed Hany',
             theme: ThemeData(fontFamily: 'Inter'),
             debugShowCheckedModeBanner: false,
-
             home: HomeScreen(),
           ),
     );
