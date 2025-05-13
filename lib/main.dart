@@ -5,7 +5,14 @@ import 'package:hanytask/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      apiKey: 'AIzaSyDlzo5q4DF6-uJJHijacr9PaLOGrRF-6BY',
+      appId: '1:621964915271:web:6fa6d6c77c958d5324b762',
+      messagingSenderId: '621964915271',
+      projectId: 'zoom-meeting-3d217',
+    ),
+  );
   runApp(const MyApp());
 }
 
